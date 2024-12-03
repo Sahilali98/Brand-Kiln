@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Brand-Kiln/static/css/main.fb35d48d.css",
-    "main.js": "/Brand-Kiln/static/js/main.da70780f.js",
+    "main.js": "/Brand-Kiln/static/js/main.8eda2b41.js",
     "static/js/453.e52305e5.chunk.js": "/Brand-Kiln/static/js/453.e52305e5.chunk.js",
     "index.html": "/Brand-Kiln/index.html",
     "main.fb35d48d.css.map": "/Brand-Kiln/static/css/main.fb35d48d.css.map",
-    "main.da70780f.js.map": "/Brand-Kiln/static/js/main.da70780f.js.map",
+    "main.8eda2b41.js.map": "/Brand-Kiln/static/js/main.8eda2b41.js.map",
     "453.e52305e5.chunk.js.map": "/Brand-Kiln/static/js/453.e52305e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb35d48d.css",
-    "static/js/main.da70780f.js"
+    "static/js/main.8eda2b41.js"
   ]
 }
