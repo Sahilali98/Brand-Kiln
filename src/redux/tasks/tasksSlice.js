@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
   value: [],
+  idCount: 1
 }
 
 export const tasksSlice = createSlice({
@@ -38,7 +39,8 @@ export const tasksSlice = createSlice({
     },
 
     add: (state, payload) => {
-      state.value = [...state.value, {id : uuidv4(), title : payload.payload.title, desc : payload.payload.desc, dueDate : payload.payload.dueDate, isCompleted : false}]
+      state.value = [...state.value, {id : state.idCount, title : payload.payload.title, desc : payload.payload.desc, dueDate : payload.payload.dueDate, isCompleted : false}]
+      state.idCount = state.idCount + 1;
     },
   },
 })

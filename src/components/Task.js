@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { add, isTaskCompleted, taskDelete, edit } from '../redux/tasks/tasksSlice'
+import '../css/Task.css'
 
 
 function Task() {
   const tasks = useSelector((state) => state.tasks.value)
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const [btnState, setBtnState] = useState(true)
 
   const [search, setSearch] = useState("");
@@ -24,7 +25,7 @@ function Task() {
     title: "",
     desc: "",
     dueDate: ""
-  })
+  });
 
   const handleOnChange = (e) => {
     setPayload({
@@ -165,6 +166,7 @@ function Task() {
 
   return (
     <div className='container p-5 my-5 bg-secondary rounded' style={{ height: 'auto' }}>
+      <h1>Add Task Here</h1>
       <div className='row '>
         <div className='col'>
           <h4>Title</h4>
@@ -185,7 +187,9 @@ function Task() {
           }
         </div>
       </div>
-      <h1 className='my-3'>Tasks</h1>
+      {
+        tasks.length ? <h1 className='my-3'>Tasks</h1> : <h1 className='my-3'>No Tasks</h1>
+      }
       <div className='row'>
         <select onChange={handleSelectOnChange} className="col-4 p-2 rounded">
           <option defaultValue='0'>All Tasks</option>
@@ -196,6 +200,7 @@ function Task() {
         
         <input onChange={handleSearch} value={search} placeholder='Title Search Here ...' type="text" className='col-4 ms-5 rounded' />
       </div>
+      <hr class="bg-white border-2 border-top border-white" />
       {
         newList.map((task) => {
           return (

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Brand-Kiln/static/css/main.557c2f70.css",
+    "main.js": "/Brand-Kiln/static/js/main.333e5419.js",
+    "static/js/453.e52305e5.chunk.js": "/Brand-Kiln/static/js/453.e52305e5.chunk.js",
+    "index.html": "/Brand-Kiln/index.html",
+    "main.557c2f70.css.map": "/Brand-Kiln/static/css/main.557c2f70.css.map",
+    "main.333e5419.js.map": "/Brand-Kiln/static/js/main.333e5419.js.map",
+    "453.e52305e5.chunk.js.map": "/Brand-Kiln/static/js/453.e52305e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.557c2f70.css",
+    "static/js/main.333e5419.js"
+  ]
+}
